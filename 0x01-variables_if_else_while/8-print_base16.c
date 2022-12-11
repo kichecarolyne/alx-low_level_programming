@@ -10,7 +10,7 @@
 int main(void)
 {
 	char c;
-	int d;
+	char d;
 
 	c = 'a';
 	d = '0';
