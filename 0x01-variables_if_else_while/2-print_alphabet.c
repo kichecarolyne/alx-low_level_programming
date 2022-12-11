@@ -7,16 +7,12 @@
  * Return: Always 0 (Success)
  */
 
-int main(void)
+int main()
 {
-	char c;
+	char ch = 'b';
 
-	c = 'a';
-	while	(c <= 'z')
-	{
-		putchar(c);
-		c++;
-	}
-		putchar('\n');
+	for (ch = 'b'; ch <= 'z'; ch++)
+	
+		putchar(ch);
 	return (0);
 }
