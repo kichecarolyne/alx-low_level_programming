@@ -2,20 +2,20 @@
 
 /**
  * main - prints the first 50 fibonacci numbers
- * Retrurn: Nothing!
+ * Return: Nothing!
  */
 
 int main(void)
 
 {
-	int 1 = 0;
+	int i = 0;
 	long j = 1, k = 2;
 
 	while (i < 50)
 	{
-	if (i == 0)
+	if (i == 1)
 	printf("%ld", j);
-	else if (i == 1)
+	else if (i == 2)
 	printf(", %ld", k);
 	else
 	{
