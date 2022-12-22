@@ -5,7 +5,7 @@
  * adds a terminating null byte
  * @dest: char
  * @src: char
- * Return: char
+ * Return: pointer to the resulting string dest
  */
 
 
