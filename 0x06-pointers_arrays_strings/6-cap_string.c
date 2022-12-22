@@ -2,14 +2,14 @@
 /**
  * cap_string - capitalizes all words in a string
  * @s: string
- * Return: capital version of the string
+ * Return: address of s
  */
 
 char *cap_string(char *s)
 
 {
 	int c = 0, d;
-	char a[] = "'\t','\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'";
+	char a[] = '\t','\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}';
 	while (*(s + c))
 	{
 	if (*(s + c) >= 'a' && *(s + c) <= 'z')
