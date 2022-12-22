@@ -10,7 +10,7 @@ char *string_toupper(char *s)
 {
 	int c;
 
-	i = 0;
+	c = 0;
 	while (*(s + c))
 	{
 	if (*(s + c) >= 'a' && *(s + c) <= 'z')
