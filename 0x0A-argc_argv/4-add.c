@@ -3,57 +3,37 @@
 #include <ctype.h>
 #include <string.h>
 /**
- * check_num - check - digits in a string
- * @str: array str
- * Return: Always 0
- */
-
-int check_num(char *str)
-
-{
-	unsigned int count;
-
-	count = 0;
-	while (count < strlen(str))
-	{
-	if (!isdigit(str[count]))
-	{
-	return (0);
-	}
-	count++;
-	}
-	return (1);
-}
-
-/**
- * main - prints the name of the program
+ * main - adds positive numbers
  * @argc: counts arguments
  * @argv: arguments
- *
  * Return: Always 0
  */
 
 int main(int argc, char *argv[])
 
 {
-	int count;
-	int str_to_int;
-	int sum = 0;
+	unsigned int i, sum, num;
 
-	count = 1;
-	while (count < argc)
-	{
-	if (check_num(argv[count]))
+	sum = 0;
 
+	if (argc < 3)
 	{
-	str_to_int = atoi(argv[count]);
-	sum += str_to_int;
+	printf("%d\n", 0);
+	return (0);
 	}
-	else
+	while (argc-- && argc > 0)
+	{
+	for (i = 0; argv[argc][i] != '\0'; i++)
+	{
+	if (!(isdigit(argv[argc][i])))
+	{
 	printf("error\n");
 	return (1);
 	}
-	count++;
-	printf("%d/n", sum);
-	return (0);
+	}
+	num = atoi(argv[argc]);
+	sum += num;
+	}
+	printf("%d\n", sum);
+	return (sum);
 }
