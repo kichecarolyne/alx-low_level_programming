@@ -5,23 +5,25 @@
  * @size: size of the array
  * @c: char to fill in the array
  *
- * Return: The aaray filled
+ * Return: The array filled
  */
 
-char *create_array(unsigned int size, char c);
+char *create_array(unsigned int size, char c)
 
 {
+	char *p;
 	unsigned int i;
-	char *s;
 
 	if (size == 0)
 	return (NULL);
-	S = malloc(Size * sizeof(char));
-	if (s == NULL)
+	p = malloc(size * sizeof(char));
+	if (p == NULL)
+	{
 	return (NULL);
+	}
 	for (i = 0; i < size; i++)
 	{
-	s[i] = c;
+	p[i] = c;
 	}
-	return (s);
+	return (p);
 }
