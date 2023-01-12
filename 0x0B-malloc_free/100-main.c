@@ -4,8 +4,6 @@
 
 /**
  * main - check the code for ALX School students.
- * @ac: number of arguments
- * @av: double pointer to arguments
  *
  * Return: Always 0.
  */
