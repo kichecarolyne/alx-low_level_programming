@@ -16,7 +16,7 @@ void simple_print_buffer(int *buffer, unsigned int size)
 {
 	unsigned int i;
 
-        i = 0;
+	i = 0;
 	while (i < size)
 	{
 	if (i % 10)
@@ -32,8 +32,6 @@ void simple_print_buffer(int *buffer, unsigned int size)
 	}
 	printf("\n");
 }
-
-
 
 /**
  * main - check the code
